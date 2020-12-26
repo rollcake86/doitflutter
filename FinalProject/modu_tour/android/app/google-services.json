@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "250229852855",
+    "project_id": "modu-tour",
+    "storage_bucket": "modu-tour.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:250229852855:android:02bc3d37361a577fa75b32",
+        "android_client_info": {
+          "package_name": "com.easyspub.modu_tour"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "250229852855-m2c1oti38070skf1eivbpptkji1ngks7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBHqLohvyiwlXK3SiFSKyE57tAKG6ohefA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "250229852855-m2c1oti38070skf1eivbpptkji1ngks7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
