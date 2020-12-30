@@ -8,6 +8,7 @@ class TourData {
   var mapy;
   var imagePath;
 
+
   TourData(
       {this.id,
         this.title,

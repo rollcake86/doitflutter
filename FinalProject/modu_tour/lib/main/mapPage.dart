@@ -182,7 +182,7 @@ class _MapPage extends State<MapPage> {
         .insert('place', info.toMap(),
             conflictAlgorithm: ConflictAlgorithm.replace)
         .then((value) {
-      ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text('즐겨찾기에 추가되었습니다')));
+          Scaffold.of(context).showSnackBar(SnackBar(content: Text('즐겨찾기에 추가되었습니다')));
     });
   }
 
