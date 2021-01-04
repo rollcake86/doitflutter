@@ -95,7 +95,6 @@ class _WidgetExampleState extends State<WidgetApp> {
               ),
               Padding(
                 padding: EdgeInsets.all(15),
-
                 child: DropdownButton(
                   items: _dropDownMenuItems,
                   onChanged: (value) {
@@ -106,10 +105,6 @@ class _WidgetExampleState extends State<WidgetApp> {
                   value: buttonText,
                 ),
               ),
-              
-              Radio(value: 1, groupValue: _radioValue, onChanged: (value){
-
-              })
             ],
           ),
         ),
