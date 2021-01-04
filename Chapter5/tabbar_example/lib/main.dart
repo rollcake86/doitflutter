@@ -55,6 +55,13 @@ class _MyHomePageState extends State<MyHomePage> with SingleTickerProviderStateM
   void initState() {
     super.initState();
     controller = TabController(length: 2, vsync: this);
+    controller.addListener(() {
+      if(!controller.indexIsChanging){
+        print("이전 index, ${controller.previousIndex}");
+        print("현재 index, ${controller.index}");
+        print("전체 탭 길이, ${controller.length}");        
+      }
+    });
   }
 
   @override

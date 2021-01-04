@@ -114,7 +114,7 @@ class _TourDetailPage extends State<TourDetailPage> {
                             style: TextStyle(fontSize: 20),
                           ),
                         ),
-                        //getGoogleMap(),
+                        getGoogleMap(),
                         _disableWidget == false ? setDisableWidget() : showDisableWidget() ,
                         //  reviewWidget()
                       ],
@@ -231,8 +231,6 @@ class _TourDetailPage extends State<TourDetailPage> {
   }
 
   Widget setDisableWidget() {
-
-
     return Container(
       child: Center(
         child: Column(

@@ -39,7 +39,7 @@ class _MainPage extends State<MainPage> with SingleTickerProviderStateMixin {
     return Scaffold(
         body: TabBarView(
           children: <Widget>[
-// TabBarView에 채울 위젯들
+            // TabBarView에 채울 위젯들
             MapPage(
               databaseReference: reference,
               db: widget.database,
