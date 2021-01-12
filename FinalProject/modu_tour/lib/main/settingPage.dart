@@ -49,14 +49,14 @@ class _SettingPage extends State<SettingPage> {
 
   @override
   Widget build(BuildContext context) {
-    if(_bannerAd !=null && mounted) {
-      _bannerAd
-        ..load()
-        ..show(
-          anchorOffset: 60,
-          anchorType: AnchorType.bottom,
-        );
-    }
+    // if(_bannerAd !=null && mounted) {
+    //   _bannerAd
+    //     ..load()
+    //     ..show(
+    //       anchorOffset: 60,
+    //       anchorType: AnchorType.bottom,
+    //     );
+    // }
     return Scaffold(
       appBar: AppBar(
         title: Text('설정하기'),
@@ -87,8 +87,9 @@ class _SettingPage extends State<SettingPage> {
               ),
               RaisedButton(
                 onPressed: () {
-                  Navigator.of(context)
-                      .pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
+                  showsDialog(context);
+                  // Navigator.of(context)
+                  //     .pushNamedAndRemoveUntil('/', (Route<dynamic> route) => false);
                 },
                 child: Text('로그아웃', style: TextStyle(fontSize: 20)),
               ),
@@ -153,5 +154,23 @@ class _SettingPage extends State<SettingPage> {
         });
       }
     });
+  }
+
+  void showsDialog(BuildContext context){
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        content: ListTile(
+          title: Text("축하합니다"),
+          subtitle: Text("모두의 여행앱을 완성했어요"),
+        ),
+        actions: <Widget>[
+          FlatButton(
+            child: Text('Ok'),
+            onPressed: () => Navigator.of(context).pop(),
+          ),
+        ],
+      ),
+    );
   }
 }
